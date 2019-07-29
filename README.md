@@ -11,12 +11,10 @@ Here we will apply the knowledge that we have acquired during the learning of th
 - c
 - s
 - %
-============================
 
 1. Handle the following conversion specifiers:
 - d
 - i
-===========================
 
 2. Create a man page for your function.
 -----------------------------
