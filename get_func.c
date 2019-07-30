@@ -2,15 +2,16 @@
 
 /**
  * get_func - look for the specifier
- * 
+ *
  *
  */
 int (*get_func(char x))(va_list args)
 {
 	int i = 0;
-	spec arr[] = { 
+	spec arr[] = {
 		{"c", print_c},
 		{"s", print_s},
+		{"%", print_percent},
 		{NULL, NULL}
 	};
 	while (arr[i].valid)
