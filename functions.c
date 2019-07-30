@@ -65,14 +65,14 @@ int print_d(va_list args)
 	int n;
 
 	count = 0;
-	n = va_arg(args, int)
-		if (num < 0)
+	n = va_arg(args, int);
+		if (n < 0)
 		{
 			absolute = (n * -1);
 			count += _putchar('-');
 		}
 		else
-			anbsolute = n;
+			absolute = n;
 
 	aux = absolute;
 	countnum = 1;
