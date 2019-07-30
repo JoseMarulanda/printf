@@ -1,7 +1,6 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdarg.h>
-
 /**
  * print_c - prints character
  * @c: character argument
@@ -14,10 +13,9 @@ int print_c(va_list args)
 	_putchar(c);
 	return(1);
 }
-
 /**
  * print_s - prints a string
- *  
+ *
  *
  */
 int print_s(va_list args)
@@ -36,4 +34,19 @@ int print_s(va_list args)
 		count++;
 	}
 	return(count);
+}
+/**
+ * print_percent - pass the percent sing
+ * Return: return the percent sing
+ *
+ */
+int print_percent(va_list args)
+{
+	char *str;
+	str = "%";
+	if (va_arg(args, int) == *str)
+	{
+		return (*str);
+	}
+	return (*str);
 }
