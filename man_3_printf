@@ -1,18 +1,48 @@
-.\" Manpage for Our Printf Project.
+.\" Manpage for Our _Printf Project.
 .\"
-.TH man 1 "29 Jul 2019" "1.0" "Our Printf Project man page"
+.TH man 1 "29 Jul 2019" "1.0" "_Printf Project man page"
 .SH NAME
-Our Printf \- This function produces output according to a format.
+._Printf
+\- This function produces output according to a format.
 .SH SYNOPSIS
 #include "holberton.h"
+
 int _printf(const char *format, ...)
+
+_printf[argument]...
+
 .SH DESCRIPTION
-This printf project includes our version of the printf function, the basic and main functions.
-.SH OPTIONS
+The printf function prints numerical values or ASCII characters characters of the format specifiers passed to it in the argument. This _printf includes our version of the printf function, the basic and main functions.
+
+Return: The number of characters printed (excluding the null byte used to end output to string).
+
+Conversion specifiers: There are a many different conversion specifiers that can be used for various data types.
+
+%c - print a single character.
+
+%s - print a string.
+
+%d - print a integer as a signed decimal (base 10) number.
+
+%i - print same as "d", integer in base 10.
+
+% - print a percent sign (%).
+
+A conversion specifier begins with a percent sign and ends with the conversion characters shown below.
+
+.SH For example:
+
+_printf("Character: %c", character);
+
+_printf("String: %s", string);
+
+_printf("Integer: %d", integer); (or use "%i" for print integer, depends of the case).
 
 .SH SEE ALSO
+printf(1), _printf(2), printf(3), sprintf(), snprintf(), vsprintf(), vsnprintf().
 
 .SH BUGS
-No known bugs.
+If there is a bug, report to 967@holbertonschool.com or 970@holbertonschool.com
+
 .SH AUTHOR
 Jose Marulanda and Marcela Sanchez - Students at Holberton School Colombia.
