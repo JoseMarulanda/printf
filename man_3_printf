@@ -1,0 +1,18 @@
+.\" Manpage for Our Printf Project.
+.\"
+.TH man 1 "29 Jul 2019" "1.0" "Our Printf Project man page"
+.SH NAME
+Our Printf \- This function produces output according to a format.
+.SH SYNOPSIS
+#include "holberton.h"
+int _printf(const char *format, ...)
+.SH DESCRIPTION
+This printf project includes our version of the printf function, the basic and main functions.
+.SH OPTIONS
+
+.SH SEE ALSO
+
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Jose Marulanda and Marcela Sanchez - Students at Holberton School Colombia.
