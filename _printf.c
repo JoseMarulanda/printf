@@ -29,9 +29,12 @@ int _printf(const char * format, ...)
 			}
 			else
 			{
-			m = get_func(format[i + 1]);
-			count += m(args);
-			i += 2;
+				m = get_func(format[i + 1]);
+				if ( m )
+					count += m(args);
+				else 
+					count = _putchar(format[i]) + _putchar(format[i + 1]);
+				i += 2;
 			}
 		}
 		count += _putchar(format[i]);
