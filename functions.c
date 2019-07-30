@@ -10,8 +10,8 @@ int print_c(va_list args)
 {
 	int c;
 	c = va_arg(args, int);
-	_putchar(c);
-	return(1);
+	return (_putchar(c));
+       
 }
 /**
  * print_s - prints a string
