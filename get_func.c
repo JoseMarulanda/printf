@@ -3,7 +3,6 @@
 /**
  * get_func - look for the specifier
  * @x: variable to the function
- * @args: list of arguments
  * Return: function
  */
 int (*get_func(char x))(va_list)
