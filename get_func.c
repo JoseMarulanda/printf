@@ -6,7 +6,7 @@
  * @args: list of arguments
  * Return: function
  */
-int (*get_func(char x))(va_list args)
+int (*get_func(char x))(va_list)
 {
 	int i = 0;
 	spec arr[] = {
