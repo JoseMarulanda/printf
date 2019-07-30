@@ -8,7 +8,7 @@
  * @format: string with format specifier
  * Return: number of characters printed
  */
-int _printf(const char * format, ...)
+int _printf(const char *format, ...)
 {
 	int count = 0, i;
 	int (*m)(va_list);
@@ -22,7 +22,7 @@ int _printf(const char * format, ...)
 	{
 		if (format[i] == '%')
 		{
-			if ( format[i + 1] == '%')
+			if (format[i + 1] == '%')
 			{
 				count += _putchar(format[i]);
 				i += 2;
@@ -30,7 +30,7 @@ int _printf(const char * format, ...)
 			else
 			{
 				m = get_func(format[i + 1]);
-				if ( m )
+				if (m)
 					count += m(args);
 				else
 					count = _putchar(format[i]) + _putchar(format[i + 1]);
@@ -45,5 +45,5 @@ int _printf(const char * format, ...)
 	}
 	_putchar('\n');
 	va_end(args);
-	return(count);
+	return (count);
 }

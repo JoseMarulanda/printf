@@ -3,27 +3,27 @@
 #include <stdarg.h>
 /**
  * print_c - prints character
- * @c: character argument
+ * @args: character argument
  * Return: number of characters
  */
 int print_c(va_list args)
 {
 	int c;
+
 	c = va_arg(args, int);
 	return (_putchar(c));
-       
 }
 /**
  * print_s - prints a string
- *
- *
+ * @args: string  argument
+ * Return: number of characters
  */
 int print_s(va_list args)
 {
 	int i, count = 0;
 	char *str;
-	i = 0;
 
+	i = 0;
 	str = va_arg(args, char*);
 	if (str == NULL)
 		str = "(null)";
@@ -33,16 +33,18 @@ int print_s(va_list args)
 		i++;
 		count++;
 	}
-	return(count);
+	return (count);
 }
 /**
  * print_percent - pass the percent sing
+ * @args: string  argument
  * Return: return the percent sing
  *
  */
 int print_percent(va_list args)
 {
 	char *str;
+
 	str = "%";
 	if (va_arg(args, int) == *str)
 	{
