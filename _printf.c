@@ -25,20 +25,23 @@ int _printf(const char * format, ...)
 			if ( format[i + 1] == '%')
 			{
 				count += _putchar(format[i]);
-				i++;
+				i += 2;
 			}
 			else
 			{
 				m = get_func(format[i + 1]);
 				if ( m )
 					count += m(args);
-				else 
+				else
 					count = _putchar(format[i]) + _putchar(format[i + 1]);
 				i += 2;
 			}
 		}
-		count += _putchar(format[i]);
-		i++;
+		else
+		{
+			count += _putchar(format[i]);
+			i++;
+		}
 	}
 	_putchar('\n');
 	va_end(args);
