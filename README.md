@@ -1,4 +1,4 @@
-**Create our printf function**
+**Creating our printf function**
 ============================
 - This repository includes our version of the printf function, the basic and main functions.
 Here we will apply the knowledge that we have acquired during the learning of the programming language C.
@@ -20,5 +20,5 @@ Here we will apply the knowledge that we have acquired during the learning of th
 -----------------------------
 **Authors**
 =========
-- Jose Marulanda.
-- Marcela Sanchez.
+- [Jose Marulanda](https://github.com/JoseMarulanda).
+- [Marcela Sanchez](https://github.com/marcewp15).
